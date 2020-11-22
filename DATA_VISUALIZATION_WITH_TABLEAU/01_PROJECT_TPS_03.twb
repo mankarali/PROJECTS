@@ -1,0 +1,2810 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='weather (weather)' inline='true' name='federated.0xxct5h0oq26k311e98ls1k8whms' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='weather' name='excel-direct.0a9hbzq13yqkj51fxkr5a06erocu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/TURBULENCE/TABLEAU/PROJECT/weather.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0a9hbzq13yqkj51fxkr5a06erocu' name='weather' table='[weather$]' type='table'>
+          <columns gridOrigin='A1:Z8023:no:A1:Z8023:0' header='yes' outcome='2'>
+            <column datatype='string' name='STATION' ordinal='0' />
+            <column datatype='date' name='DATE' ordinal='1' />
+            <column datatype='string' name='AWND' ordinal='2' />
+            <column datatype='integer' name='TAVG' ordinal='3' />
+            <column datatype='integer' name='TMAX' ordinal='4' />
+            <column datatype='integer' name='TMIN' ordinal='5' />
+            <column datatype='integer' name='WT01' ordinal='6' />
+            <column datatype='integer' name='WT02' ordinal='7' />
+            <column datatype='integer' name='WT03' ordinal='8' />
+            <column datatype='integer' name='WT04' ordinal='9' />
+            <column datatype='integer' name='WT05' ordinal='10' />
+            <column datatype='integer' name='WT06' ordinal='11' />
+            <column datatype='integer' name='WT07' ordinal='12' />
+            <column datatype='integer' name='WT08' ordinal='13' />
+            <column datatype='integer' name='WT09' ordinal='14' />
+            <column datatype='integer' name='WT10' ordinal='15' />
+            <column datatype='integer' name='WT11' ordinal='16' />
+            <column datatype='integer' name='WT13' ordinal='17' />
+            <column datatype='integer' name='WT14' ordinal='18' />
+            <column datatype='integer' name='WT15' ordinal='19' />
+            <column datatype='integer' name='WT16' ordinal='20' />
+            <column datatype='integer' name='WT17' ordinal='21' />
+            <column datatype='integer' name='WT18' ordinal='22' />
+            <column datatype='integer' name='WT19' ordinal='23' />
+            <column datatype='integer' name='WT21' ordinal='24' />
+            <column datatype='integer' name='WT22' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0a9hbzq13yqkj51fxkr5a06erocu' name='weather' table='[weather$]' type='table'>
+          <columns gridOrigin='A1:Z8023:no:A1:Z8023:0' header='yes' outcome='2'>
+            <column datatype='string' name='STATION' ordinal='0' />
+            <column datatype='date' name='DATE' ordinal='1' />
+            <column datatype='string' name='AWND' ordinal='2' />
+            <column datatype='integer' name='TAVG' ordinal='3' />
+            <column datatype='integer' name='TMAX' ordinal='4' />
+            <column datatype='integer' name='TMIN' ordinal='5' />
+            <column datatype='integer' name='WT01' ordinal='6' />
+            <column datatype='integer' name='WT02' ordinal='7' />
+            <column datatype='integer' name='WT03' ordinal='8' />
+            <column datatype='integer' name='WT04' ordinal='9' />
+            <column datatype='integer' name='WT05' ordinal='10' />
+            <column datatype='integer' name='WT06' ordinal='11' />
+            <column datatype='integer' name='WT07' ordinal='12' />
+            <column datatype='integer' name='WT08' ordinal='13' />
+            <column datatype='integer' name='WT09' ordinal='14' />
+            <column datatype='integer' name='WT10' ordinal='15' />
+            <column datatype='integer' name='WT11' ordinal='16' />
+            <column datatype='integer' name='WT13' ordinal='17' />
+            <column datatype='integer' name='WT14' ordinal='18' />
+            <column datatype='integer' name='WT15' ordinal='19' />
+            <column datatype='integer' name='WT16' ordinal='20' />
+            <column datatype='integer' name='WT17' ordinal='21' />
+            <column datatype='integer' name='WT18' ordinal='22' />
+            <column datatype='integer' name='WT19' ordinal='23' />
+            <column datatype='integer' name='WT21' ordinal='24' />
+            <column datatype='integer' name='WT22' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weather]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Z8023:no:A1:Z8023:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATION</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STATION]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>STATION</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DATE]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>DATE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AWND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AWND]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>AWND</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAVG]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>TAVG</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TMAX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TMAX]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>TMAX</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TMIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TMIN]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>TMIN</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT01</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT01]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT01</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT02</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT02]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT02</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT03</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT03]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT03</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT04</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT04]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT04</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT05</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT05]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT05</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT06</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT06]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT06</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT07</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT07]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT07</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT08</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT08]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT08</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT09</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT09]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT09</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT10]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT10</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT11]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT11</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT13]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT13</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT14]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT14</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT15]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT15</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT16</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT16]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT16</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT17]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT17</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT18]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT18</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT19]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT19</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT21</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT21]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT21</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WT22</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WT22]</local-name>
+            <parent-name>[weather]</parent-name>
+            <remote-alias>WT22</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Awnd' datatype='string' name='[AWND]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Bad Conditions (bin)' datatype='integer' name='[Bad Conditions (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_1011339640673574917]' peg='0' size='1' />
+      </column>
+      <column caption='Tdiff' datatype='integer' name='[Calculation_1011339640672100354]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[TMAX]-[TMIN]' />
+      </column>
+      <column caption='Tmin&gt;Tmax' datatype='boolean' name='[Calculation_1011339640672796676]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[TMIN] &gt; [TMAX]' />
+      </column>
+      <column caption='Bad Conditions' datatype='integer' name='[Calculation_1011339640673574917]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN([WT01])+ZN([WT02])+ZN([WT03])+ZN([WT04])+ZN([WT05])+ZN([WT06])+ZN([WT07])+ZN([WT08])&#13;&#10;+ZN([WT09])+ZN([WT10])+ZN([WT11])+ZN([WT13])+ZN([WT14])+ZN([WT15])+ZN([WT16])+ZN([WT17])+&#13;&#10;ZN([WT18])+ZN([WT19])+ZN([WT21])+ZN([WT22])' />
+      </column>
+      <column caption='Rating' datatype='string' name='[Calculation_1011339640674009094]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Calculation_1011339640673574917]&#13;&#10;WHEN 0 THEN &apos;good&apos;&#13;&#10;WHEN 1 THEN &apos;bad&apos;&#13;&#10;WHEN 2 THEN &apos;bad&apos;&#13;&#10;WHEN 3 THEN &apos;bad&apos;&#13;&#10;WHEN 4 THEN &apos;bad&apos;&#13;&#10;WHEN 5 THEN &apos;worse&apos;&#13;&#10;WHEN 6 THEN &apos;worse&apos;&#13;&#10;WHEN 7 THEN &apos;worse&apos;&#13;&#10;WHEN 8 THEN &apos;worse&apos;&#13;&#10;WHEN 9 THEN &apos;worse&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Date' datatype='date' name='[DATE]' role='dimension' type='ordinal' />
+      <column caption='Station' datatype='string' name='[STATION]' role='dimension' type='nominal' />
+      <column caption='Tavg' datatype='integer' name='[TAVG]' role='measure' type='quantitative' />
+      <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+      <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Tdiff (bin)' datatype='integer' name='[Tdiff (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_1011339640672100354]' peg='0' size='5' />
+      </column>
+      <column caption='Wt01' datatype='integer' name='[WT01]' role='measure' type='quantitative' />
+      <column caption='Wt02' datatype='integer' name='[WT02]' role='measure' type='quantitative' />
+      <column caption='Wt03' datatype='integer' name='[WT03]' role='measure' type='quantitative' />
+      <column caption='Wt04' datatype='integer' name='[WT04]' role='measure' type='quantitative' />
+      <column caption='Wt05' datatype='integer' name='[WT05]' role='measure' type='quantitative' />
+      <column caption='Wt06' datatype='integer' name='[WT06]' role='measure' type='quantitative' />
+      <column caption='Wt07' datatype='integer' name='[WT07]' role='measure' type='quantitative' />
+      <column caption='Wt08' datatype='integer' name='[WT08]' role='measure' type='quantitative' />
+      <column caption='Wt09' datatype='integer' name='[WT09]' role='measure' type='quantitative' />
+      <column caption='Wt10' datatype='integer' name='[WT10]' role='measure' type='quantitative' />
+      <column caption='Wt11' datatype='integer' name='[WT11]' role='measure' type='quantitative' />
+      <column caption='Wt13' datatype='integer' name='[WT13]' role='measure' type='quantitative' />
+      <column caption='Wt14' datatype='integer' name='[WT14]' role='measure' type='quantitative' />
+      <column caption='Wt15' datatype='integer' name='[WT15]' role='measure' type='quantitative' />
+      <column caption='Wt16' datatype='integer' name='[WT16]' role='measure' type='quantitative' />
+      <column caption='Wt17' datatype='integer' name='[WT17]' role='measure' type='quantitative' />
+      <column caption='Wt18' datatype='integer' name='[WT18]' role='measure' type='quantitative' />
+      <column caption='Wt19' datatype='integer' name='[WT19]' role='measure' type='quantitative' />
+      <column caption='Wt21' datatype='integer' name='[WT21]' role='measure' type='quantitative' />
+      <column caption='Wt22' datatype='integer' name='[WT22]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='weather' datatype='table' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='weather' id='weather_9F61AFD217E047FDA2AECA5ED93FFEFA'>
+            <properties context=''>
+              <relation connection='excel-direct.0a9hbzq13yqkj51fxkr5a06erocu' name='weather' table='[weather$]' type='table'>
+                <columns gridOrigin='A1:Z8023:no:A1:Z8023:0' header='yes' outcome='2'>
+                  <column datatype='string' name='STATION' ordinal='0' />
+                  <column datatype='date' name='DATE' ordinal='1' />
+                  <column datatype='string' name='AWND' ordinal='2' />
+                  <column datatype='integer' name='TAVG' ordinal='3' />
+                  <column datatype='integer' name='TMAX' ordinal='4' />
+                  <column datatype='integer' name='TMIN' ordinal='5' />
+                  <column datatype='integer' name='WT01' ordinal='6' />
+                  <column datatype='integer' name='WT02' ordinal='7' />
+                  <column datatype='integer' name='WT03' ordinal='8' />
+                  <column datatype='integer' name='WT04' ordinal='9' />
+                  <column datatype='integer' name='WT05' ordinal='10' />
+                  <column datatype='integer' name='WT06' ordinal='11' />
+                  <column datatype='integer' name='WT07' ordinal='12' />
+                  <column datatype='integer' name='WT08' ordinal='13' />
+                  <column datatype='integer' name='WT09' ordinal='14' />
+                  <column datatype='integer' name='WT10' ordinal='15' />
+                  <column datatype='integer' name='WT11' ordinal='16' />
+                  <column datatype='integer' name='WT13' ordinal='17' />
+                  <column datatype='integer' name='WT14' ordinal='18' />
+                  <column datatype='integer' name='WT15' ordinal='19' />
+                  <column datatype='integer' name='WT16' ordinal='20' />
+                  <column datatype='integer' name='WT17' ordinal='21' />
+                  <column datatype='integer' name='WT18' ordinal='22' />
+                  <column datatype='integer' name='WT19' ordinal='23' />
+                  <column datatype='integer' name='WT21' ordinal='24' />
+                  <column datatype='integer' name='WT22' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='RI_cleaned_Full Data_R' inline='true' name='federated.01edtqd1ilbydg18tltyw1h3jxl2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='RI_cleaned_Full Data_R' name='textscan.1xt7fsv00xhn1311c9rgo0z1o7o3'>
+            <connection class='textscan' directory='C:/Users/TURBULENCE/TABLEAU' filename='RI_cleaned_Full Data_R.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xt7fsv00xhn1311c9rgo0z1o7o3' name='RI_cleaned_Full Data_R.csv' table='[RI_cleaned_Full Data_R#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+            <column datatype='string' name='Contraband Found' ordinal='0' />
+            <column datatype='string' name='County Fips' ordinal='1' />
+            <column datatype='string' name='County Name' ordinal='2' />
+            <column datatype='string' name='District' ordinal='3' />
+            <column datatype='boolean' name='Driver Gender' ordinal='4' />
+            <column datatype='string' name='Driver Race' ordinal='5' />
+            <column datatype='string' name='Driver Race Raw' ordinal='6' />
+            <column datatype='string' name='Drugs Related Stop' ordinal='7' />
+            <column datatype='string' name='Fine Grained Location' ordinal='8' />
+            <column datatype='string' name='Frisk - Search Type' ordinal='9' />
+            <column datatype='string' name='Frisk - Search Type (group)' ordinal='10' />
+            <column datatype='string' name='Id' ordinal='11' />
+            <column datatype='string' name='Is Arrested' ordinal='12' />
+            <column datatype='string' name='Location Raw' ordinal='13' />
+            <column datatype='string' name='Out Of State' ordinal='14' />
+            <column datatype='string' name='Search Conducted' ordinal='15' />
+            <column datatype='string' name='Search Type' ordinal='16' />
+            <column datatype='string' name='Search Type Raw' ordinal='17' />
+            <column datatype='string' name='State' ordinal='18' />
+            <column datatype='date' name='Stop Date' ordinal='19' />
+            <column datatype='string' name='Stop Duration' ordinal='20' />
+            <column datatype='string' name='Stop Outcome' ordinal='21' />
+            <column datatype='datetime' name='Stop Time' ordinal='22' />
+            <column datatype='string' name='Violation' ordinal='23' />
+            <column datatype='string' name='Violation Raw' ordinal='24' />
+            <column datatype='integer' name='Driver Age' ordinal='25' />
+            <column datatype='integer' name='Driver Age Raw' ordinal='26' />
+            <column datatype='integer' name='Police Department' ordinal='27' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1xt7fsv00xhn1311c9rgo0z1o7o3' name='RI_cleaned_Full Data_R.csv' table='[RI_cleaned_Full Data_R#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+              <column datatype='string' name='Contraband Found' ordinal='0' />
+              <column datatype='string' name='County Fips' ordinal='1' />
+              <column datatype='string' name='County Name' ordinal='2' />
+              <column datatype='string' name='District' ordinal='3' />
+              <column datatype='boolean' name='Driver Gender' ordinal='4' />
+              <column datatype='string' name='Driver Race' ordinal='5' />
+              <column datatype='string' name='Driver Race Raw' ordinal='6' />
+              <column datatype='string' name='Drugs Related Stop' ordinal='7' />
+              <column datatype='string' name='Fine Grained Location' ordinal='8' />
+              <column datatype='string' name='Frisk - Search Type' ordinal='9' />
+              <column datatype='string' name='Frisk - Search Type (group)' ordinal='10' />
+              <column datatype='string' name='Id' ordinal='11' />
+              <column datatype='string' name='Is Arrested' ordinal='12' />
+              <column datatype='string' name='Location Raw' ordinal='13' />
+              <column datatype='string' name='Out Of State' ordinal='14' />
+              <column datatype='string' name='Search Conducted' ordinal='15' />
+              <column datatype='string' name='Search Type' ordinal='16' />
+              <column datatype='string' name='Search Type Raw' ordinal='17' />
+              <column datatype='string' name='State' ordinal='18' />
+              <column datatype='date' name='Stop Date' ordinal='19' />
+              <column datatype='string' name='Stop Duration' ordinal='20' />
+              <column datatype='string' name='Stop Outcome' ordinal='21' />
+              <column datatype='datetime' name='Stop Time' ordinal='22' />
+              <column datatype='string' name='Violation' ordinal='23' />
+              <column datatype='string' name='Violation Raw' ordinal='24' />
+              <column datatype='integer' name='Driver Age' ordinal='25' />
+              <column datatype='integer' name='Driver Age Raw' ordinal='26' />
+              <column datatype='integer' name='Police Department' ordinal='27' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1xt7fsv00xhn1311c9rgo0z1o7o3' name='weather.csv' table='[weather#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+              <column datatype='string' name='Awnd' ordinal='0' />
+              <column datatype='integer' name='Bad Conditions (bin)' ordinal='1' />
+              <column datatype='date' name='Date' ordinal='2' />
+              <column datatype='string' name='Rating' ordinal='3' />
+              <column datatype='string' name='Station' ordinal='4' />
+              <column datatype='integer' name='Tdiff (bin)' ordinal='5' />
+              <column datatype='string' name='Tmin&gt;Tmax' ordinal='6' />
+              <column datatype='string' name='Wt01' ordinal='7' />
+              <column datatype='string' name='Wt02' ordinal='8' />
+              <column datatype='string' name='Wt03' ordinal='9' />
+              <column datatype='string' name='Wt04' ordinal='10' />
+              <column datatype='string' name='Wt05' ordinal='11' />
+              <column datatype='string' name='Wt06' ordinal='12' />
+              <column datatype='string' name='Wt07' ordinal='13' />
+              <column datatype='string' name='Wt08' ordinal='14' />
+              <column datatype='string' name='Wt09' ordinal='15' />
+              <column datatype='string' name='Wt10' ordinal='16' />
+              <column datatype='string' name='Wt11' ordinal='17' />
+              <column datatype='string' name='Wt13' ordinal='18' />
+              <column datatype='string' name='Wt14' ordinal='19' />
+              <column datatype='string' name='Wt15' ordinal='20' />
+              <column datatype='string' name='Wt16' ordinal='21' />
+              <column datatype='string' name='Wt17' ordinal='22' />
+              <column datatype='string' name='Wt18' ordinal='23' />
+              <column datatype='string' name='Wt19' ordinal='24' />
+              <column datatype='string' name='Wt21' ordinal='25' />
+              <column datatype='string' name='Wt22' ordinal='26' />
+              <column datatype='integer' name='Bad Conditions' ordinal='27' />
+              <column datatype='string' name='Tavg' ordinal='28' />
+              <column datatype='integer' name='Tdiff' ordinal='29' />
+              <column datatype='integer' name='Tmax' ordinal='30' />
+              <column datatype='integer' name='Tmin' ordinal='31' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contraband Found</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contraband Found]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Contraband Found</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County Fips</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County Fips]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>County Fips</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County Name]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>County Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Gender</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Driver Gender]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Driver Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Driver Race]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Driver Race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Race Raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Driver Race Raw]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Driver Race Raw</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drugs Related Stop</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Drugs Related Stop]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Drugs Related Stop</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fine Grained Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fine Grained Location]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Fine Grained Location</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frisk - Search Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Frisk - Search Type]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Frisk - Search Type</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frisk - Search Type (group)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Frisk - Search Type (group)]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Frisk - Search Type (group)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Arrested</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is Arrested]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Is Arrested</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Raw]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Location Raw</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Out Of State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Out Of State]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Out Of State</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Search Conducted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Search Conducted]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Search Conducted</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Search Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Search Type]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Search Type</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Search Type Raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Search Type Raw]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Search Type Raw</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stop Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Stop Date]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Stop Date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stop Duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stop Duration]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Stop Duration</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stop Outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stop Outcome]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Stop Outcome</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stop Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Stop Time]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Stop Time</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Violation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Violation]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Violation</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Violation Raw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Violation Raw]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Violation Raw</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Driver Age]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Driver Age</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Age Raw</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Driver Age Raw]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Driver Age Raw</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police Department</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Police Department]</local-name>
+            <parent-name>[RI_cleaned_Full Data_R.csv]</parent-name>
+            <remote-alias>Police Department</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Awnd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Awnd]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Awnd</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bad Conditions (bin)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bad Conditions (bin)]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Bad Conditions (bin)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Station]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Station</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tdiff (bin)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tdiff (bin)]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Tdiff (bin)</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tmin&gt;Tmax</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tmin&gt;Tmax]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Tmin&gt;Tmax</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt01</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt01]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt01</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt02</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt02]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt02</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt03</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt03]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt03</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt04</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt04]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt04</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt05</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt05]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt05</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt06</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt06]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt06</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt07</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt07]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt07</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt08</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt08]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt08</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt09</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt09]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt09</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt10</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt10]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt10</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt11</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt11]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt11</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt13</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt13]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt13</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt14]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt14</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt15</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt15]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt15</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt16</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt16]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt16</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt17</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt17]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt17</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt18</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt18]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt18</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt19</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt19]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt19</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt21</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt21]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt21</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt22</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wt22]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Wt22</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bad Conditions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bad Conditions]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Bad Conditions</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tavg</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tavg]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Tavg</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tdiff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tdiff]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Tdiff</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tmax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tmax]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Tmax</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tmin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tmin]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Tmin</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_B8676676FF81499899737C7C7B39AD1A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Is Arrested_Updated' datatype='string' name='[Calculation_377176518213365760]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IFNULL(STR([Is Arrested]), &apos;Unknown&apos;)' />
+      </column>
+      <column caption='Arres Rate' datatype='real' name='[Calculation_377176518213836801]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IIF(([Calculation_377176518213365760] = &apos;VRAI&apos;), 1, 0)) / TOTAL(COUNT([__tableau_internal_object_id__].[weather.csv_B8676676FF81499899737C7C7B39AD1A]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[County Fips]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Out Of State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='RI_cleaned_Full Data_R.csv' datatype='table' name='[__tableau_internal_object_id__].[RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_B8676676FF81499899737C7C7B39AD1A]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='RI_cleaned_Full Data_R.csv' id='RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C'>
+            <properties context=''>
+              <relation connection='textscan.1xt7fsv00xhn1311c9rgo0z1o7o3' name='RI_cleaned_Full Data_R.csv' table='[RI_cleaned_Full Data_R#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+                  <column datatype='string' name='Contraband Found' ordinal='0' />
+                  <column datatype='string' name='County Fips' ordinal='1' />
+                  <column datatype='string' name='County Name' ordinal='2' />
+                  <column datatype='string' name='District' ordinal='3' />
+                  <column datatype='boolean' name='Driver Gender' ordinal='4' />
+                  <column datatype='string' name='Driver Race' ordinal='5' />
+                  <column datatype='string' name='Driver Race Raw' ordinal='6' />
+                  <column datatype='string' name='Drugs Related Stop' ordinal='7' />
+                  <column datatype='string' name='Fine Grained Location' ordinal='8' />
+                  <column datatype='string' name='Frisk - Search Type' ordinal='9' />
+                  <column datatype='string' name='Frisk - Search Type (group)' ordinal='10' />
+                  <column datatype='string' name='Id' ordinal='11' />
+                  <column datatype='string' name='Is Arrested' ordinal='12' />
+                  <column datatype='string' name='Location Raw' ordinal='13' />
+                  <column datatype='string' name='Out Of State' ordinal='14' />
+                  <column datatype='string' name='Search Conducted' ordinal='15' />
+                  <column datatype='string' name='Search Type' ordinal='16' />
+                  <column datatype='string' name='Search Type Raw' ordinal='17' />
+                  <column datatype='string' name='State' ordinal='18' />
+                  <column datatype='date' name='Stop Date' ordinal='19' />
+                  <column datatype='string' name='Stop Duration' ordinal='20' />
+                  <column datatype='string' name='Stop Outcome' ordinal='21' />
+                  <column datatype='datetime' name='Stop Time' ordinal='22' />
+                  <column datatype='string' name='Violation' ordinal='23' />
+                  <column datatype='string' name='Violation Raw' ordinal='24' />
+                  <column datatype='integer' name='Driver Age' ordinal='25' />
+                  <column datatype='integer' name='Driver Age Raw' ordinal='26' />
+                  <column datatype='integer' name='Police Department' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='weather.csv' id='weather.csv_B8676676FF81499899737C7C7B39AD1A'>
+            <properties context=''>
+              <relation connection='textscan.1xt7fsv00xhn1311c9rgo0z1o7o3' name='weather.csv' table='[weather#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR' separator=';'>
+                  <column datatype='string' name='Awnd' ordinal='0' />
+                  <column datatype='integer' name='Bad Conditions (bin)' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='string' name='Rating' ordinal='3' />
+                  <column datatype='string' name='Station' ordinal='4' />
+                  <column datatype='integer' name='Tdiff (bin)' ordinal='5' />
+                  <column datatype='string' name='Tmin&gt;Tmax' ordinal='6' />
+                  <column datatype='string' name='Wt01' ordinal='7' />
+                  <column datatype='string' name='Wt02' ordinal='8' />
+                  <column datatype='string' name='Wt03' ordinal='9' />
+                  <column datatype='string' name='Wt04' ordinal='10' />
+                  <column datatype='string' name='Wt05' ordinal='11' />
+                  <column datatype='string' name='Wt06' ordinal='12' />
+                  <column datatype='string' name='Wt07' ordinal='13' />
+                  <column datatype='string' name='Wt08' ordinal='14' />
+                  <column datatype='string' name='Wt09' ordinal='15' />
+                  <column datatype='string' name='Wt10' ordinal='16' />
+                  <column datatype='string' name='Wt11' ordinal='17' />
+                  <column datatype='string' name='Wt13' ordinal='18' />
+                  <column datatype='string' name='Wt14' ordinal='19' />
+                  <column datatype='string' name='Wt15' ordinal='20' />
+                  <column datatype='string' name='Wt16' ordinal='21' />
+                  <column datatype='string' name='Wt17' ordinal='22' />
+                  <column datatype='string' name='Wt18' ordinal='23' />
+                  <column datatype='string' name='Wt19' ordinal='24' />
+                  <column datatype='string' name='Wt21' ordinal='25' />
+                  <column datatype='string' name='Wt22' ordinal='26' />
+                  <column datatype='integer' name='Bad Conditions' ordinal='27' />
+                  <column datatype='string' name='Tavg' ordinal='28' />
+                  <column datatype='integer' name='Tdiff' ordinal='29' />
+                  <column datatype='integer' name='Tmax' ordinal='30' />
+                  <column datatype='integer' name='Tmin' ordinal='31' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Stop Date]' />
+              <expression op='[Date]' />
+            </expression>
+            <first-end-point object-id='RI_cleaned_Full Data_R.csv_3E68B0AF1B864A62A7C9625C98E9868C' />
+            <second-end-point object-id='weather.csv_B8676676FF81499899737C7C7B39AD1A' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1_Create_a_Box_Plot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12'>1- Create a </run>
+            <run bold='true' fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12' italic='true' underline='true'>box plot</run>
+            <run fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12'> using TMIN, TAVG, TMAX.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather (weather)' name='federated.0xxct5h0oq26k311e98ls1k8whms' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xxct5h0oq26k311e98ls1k8whms'>
+            <column caption='Tavg' datatype='integer' name='[TAVG]' role='measure' type='quantitative' />
+            <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+            <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+            <column-instance column='[TAVG]' derivation='Sum' name='[sum:TAVG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TMAX]' derivation='Sum' name='[sum:TMAX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TMIN]' derivation='Sum' name='[sum:TMIN:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xxct5h0oq26k311e98ls1k8whms].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xxct5h0oq26k311e98ls1k8whms].[sum:TMIN:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xxct5h0oq26k311e98ls1k8whms].[sum:TAVG:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xxct5h0oq26k311e98ls1k8whms].[sum:TMAX:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0xxct5h0oq26k311e98ls1k8whms].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0xxct5h0oq26k311e98ls1k8whms].[sum:TMIN:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xxct5h0oq26k311e98ls1k8whms].[sum:TAVG:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xxct5h0oq26k311e98ls1k8whms].[sum:TMAX:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0xxct5h0oq26k311e98ls1k8whms].[:Measure Names]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0xxct5h0oq26k311e98ls1k8whms].[Multiple Values]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline3' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0xxct5h0oq26k311e98ls1k8whms].[Multiple Values]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xxct5h0oq26k311e98ls1k8whms].[Multiple Values]</rows>
+        <cols>[federated.0xxct5h0oq26k311e98ls1k8whms].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{AFC1639A-1263-4152-B959-AC0614CC0F60}' />
+    </worksheet>
+    <worksheet name='2_Temperature_Difference_Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12'>2- Create a temperature difference histogram</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather (weather)' name='federated.0xxct5h0oq26k311e98ls1k8whms' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xxct5h0oq26k311e98ls1k8whms'>
+            <column caption='Tdiff' datatype='integer' name='[Calculation_1011339640672100354]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[TMAX]-[TMIN]' />
+            </column>
+            <column caption='Tmin&gt;Tmax' datatype='boolean' name='[Calculation_1011339640672796676]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[TMIN] &gt; [TMAX]' />
+            </column>
+            <column caption='Tmax' datatype='integer' name='[TMAX]' role='measure' type='quantitative' />
+            <column caption='Tmin' datatype='integer' name='[TMIN]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Tdiff (bin)' datatype='integer' name='[Tdiff (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_1011339640672100354]' peg='0' size='5' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='weather' datatype='integer' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather' datatype='table' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1011339640672796676]' derivation='None' name='[none:Calculation_1011339640672796676:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tdiff (bin)]' derivation='None' name='[none:Tdiff (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Calculation_1011339640672796676:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1011339640672796676:nk]' member='false' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Tdiff (bin):ok]'>
+            <groupfilter from='-5' function='range' level='[none:Tdiff (bin):ok]' to='9' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Tdiff (bin):ok]</column>
+            <column>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Calculation_1011339640672796676:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xxct5h0oq26k311e98ls1k8whms].[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]</rows>
+        <cols>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Tdiff (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0xxct5h0oq26k311e98ls1k8whms].[Tdiff (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{847D3D59-C58C-4F25-996E-DD5DDC2E3932}' />
+    </worksheet>
+    <worksheet name='3_Bad_Conditions_Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12'>3 - Create a calculated column named Bad Conditions that calculates the values within WT01 to WT22. Replace the null values with zero inside the calculation. Then create a histogram that displays bad weather conditions.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather (weather)' name='federated.0xxct5h0oq26k311e98ls1k8whms' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xxct5h0oq26k311e98ls1k8whms'>
+            <column aggregation='None' caption='Bad Conditions (bin)' datatype='integer' name='[Bad Conditions (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_1011339640673574917]' peg='0' size='1' />
+            </column>
+            <column caption='Bad Conditions' datatype='integer' name='[Calculation_1011339640673574917]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN([WT01])+ZN([WT02])+ZN([WT03])+ZN([WT04])+ZN([WT05])+ZN([WT06])+ZN([WT07])+ZN([WT08])&#13;&#10;+ZN([WT09])+ZN([WT10])+ZN([WT11])+ZN([WT13])+ZN([WT14])+ZN([WT15])+ZN([WT16])+ZN([WT17])+&#13;&#10;ZN([WT18])+ZN([WT19])+ZN([WT21])+ZN([WT22])' />
+            </column>
+            <column caption='Wt01' datatype='integer' name='[WT01]' role='measure' type='quantitative' />
+            <column caption='Wt02' datatype='integer' name='[WT02]' role='measure' type='quantitative' />
+            <column caption='Wt03' datatype='integer' name='[WT03]' role='measure' type='quantitative' />
+            <column caption='Wt04' datatype='integer' name='[WT04]' role='measure' type='quantitative' />
+            <column caption='Wt05' datatype='integer' name='[WT05]' role='measure' type='quantitative' />
+            <column caption='Wt06' datatype='integer' name='[WT06]' role='measure' type='quantitative' />
+            <column caption='Wt07' datatype='integer' name='[WT07]' role='measure' type='quantitative' />
+            <column caption='Wt08' datatype='integer' name='[WT08]' role='measure' type='quantitative' />
+            <column caption='Wt09' datatype='integer' name='[WT09]' role='measure' type='quantitative' />
+            <column caption='Wt10' datatype='integer' name='[WT10]' role='measure' type='quantitative' />
+            <column caption='Wt11' datatype='integer' name='[WT11]' role='measure' type='quantitative' />
+            <column caption='Wt13' datatype='integer' name='[WT13]' role='measure' type='quantitative' />
+            <column caption='Wt14' datatype='integer' name='[WT14]' role='measure' type='quantitative' />
+            <column caption='Wt15' datatype='integer' name='[WT15]' role='measure' type='quantitative' />
+            <column caption='Wt16' datatype='integer' name='[WT16]' role='measure' type='quantitative' />
+            <column caption='Wt17' datatype='integer' name='[WT17]' role='measure' type='quantitative' />
+            <column caption='Wt18' datatype='integer' name='[WT18]' role='measure' type='quantitative' />
+            <column caption='Wt19' datatype='integer' name='[WT19]' role='measure' type='quantitative' />
+            <column caption='Wt21' datatype='integer' name='[WT21]' role='measure' type='quantitative' />
+            <column caption='Wt22' datatype='integer' name='[WT22]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='weather' datatype='integer' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather' datatype='table' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+            <column-instance column='[Bad Conditions (bin)]' derivation='None' name='[none:Bad Conditions (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xxct5h0oq26k311e98ls1k8whms].[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]</rows>
+        <cols>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Bad Conditions (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0xxct5h0oq26k311e98ls1k8whms].[Bad Conditions (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{8C2AE054-86F9-499B-8448-B1379F2E12BF}' />
+    </worksheet>
+    <worksheet name='4_Rating_Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12'>4 - Create a calculated column named Rating that maps the rating. Then create a view that displays rating’s distribution.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weather (weather)' name='federated.0xxct5h0oq26k311e98ls1k8whms' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xxct5h0oq26k311e98ls1k8whms'>
+            <column caption='Bad Conditions' datatype='integer' name='[Calculation_1011339640673574917]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN([WT01])+ZN([WT02])+ZN([WT03])+ZN([WT04])+ZN([WT05])+ZN([WT06])+ZN([WT07])+ZN([WT08])&#13;&#10;+ZN([WT09])+ZN([WT10])+ZN([WT11])+ZN([WT13])+ZN([WT14])+ZN([WT15])+ZN([WT16])+ZN([WT17])+&#13;&#10;ZN([WT18])+ZN([WT19])+ZN([WT21])+ZN([WT22])' />
+            </column>
+            <column caption='Rating' datatype='string' name='[Calculation_1011339640674009094]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Calculation_1011339640673574917]&#13;&#10;WHEN 0 THEN &apos;good&apos;&#13;&#10;WHEN 1 THEN &apos;bad&apos;&#13;&#10;WHEN 2 THEN &apos;bad&apos;&#13;&#10;WHEN 3 THEN &apos;bad&apos;&#13;&#10;WHEN 4 THEN &apos;bad&apos;&#13;&#10;WHEN 5 THEN &apos;worse&apos;&#13;&#10;WHEN 6 THEN &apos;worse&apos;&#13;&#10;WHEN 7 THEN &apos;worse&apos;&#13;&#10;WHEN 8 THEN &apos;worse&apos;&#13;&#10;WHEN 9 THEN &apos;worse&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Wt01' datatype='integer' name='[WT01]' role='measure' type='quantitative' />
+            <column caption='Wt02' datatype='integer' name='[WT02]' role='measure' type='quantitative' />
+            <column caption='Wt03' datatype='integer' name='[WT03]' role='measure' type='quantitative' />
+            <column caption='Wt04' datatype='integer' name='[WT04]' role='measure' type='quantitative' />
+            <column caption='Wt05' datatype='integer' name='[WT05]' role='measure' type='quantitative' />
+            <column caption='Wt06' datatype='integer' name='[WT06]' role='measure' type='quantitative' />
+            <column caption='Wt07' datatype='integer' name='[WT07]' role='measure' type='quantitative' />
+            <column caption='Wt08' datatype='integer' name='[WT08]' role='measure' type='quantitative' />
+            <column caption='Wt09' datatype='integer' name='[WT09]' role='measure' type='quantitative' />
+            <column caption='Wt10' datatype='integer' name='[WT10]' role='measure' type='quantitative' />
+            <column caption='Wt11' datatype='integer' name='[WT11]' role='measure' type='quantitative' />
+            <column caption='Wt13' datatype='integer' name='[WT13]' role='measure' type='quantitative' />
+            <column caption='Wt14' datatype='integer' name='[WT14]' role='measure' type='quantitative' />
+            <column caption='Wt15' datatype='integer' name='[WT15]' role='measure' type='quantitative' />
+            <column caption='Wt16' datatype='integer' name='[WT16]' role='measure' type='quantitative' />
+            <column caption='Wt17' datatype='integer' name='[WT17]' role='measure' type='quantitative' />
+            <column caption='Wt18' datatype='integer' name='[WT18]' role='measure' type='quantitative' />
+            <column caption='Wt19' datatype='integer' name='[WT19]' role='measure' type='quantitative' />
+            <column caption='Wt21' datatype='integer' name='[WT21]' role='measure' type='quantitative' />
+            <column caption='Wt22' datatype='integer' name='[WT22]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='weather' datatype='integer' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather' datatype='table' name='[__tableau_internal_object_id__].[weather_9F61AFD217E047FDA2AECA5ED93FFEFA]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1011339640674009094]' derivation='None' name='[none:Calculation_1011339640674009094:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Calculation_1011339640674009094:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0xxct5h0oq26k311e98ls1k8whms].[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Calculation_1011339640674009094:nk]</rows>
+        <cols>[federated.0xxct5h0oq26k311e98ls1k8whms].[__tableau_internal_object_id__].[cnt:weather_9F61AFD217E047FDA2AECA5ED93FFEFA:qk]</cols>
+      </table>
+      <simple-id uuid='{C6B91C82-ECD1-455B-AD32-942ACA6E6C90}' />
+    </worksheet>
+    <worksheet name='5_Arrest_Rate_in_Different_Weather_Conditions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#24292e' fontname='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji' fontsize='12'>5. Create a text table that displays arrest rate per search for each weather rating.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='RI_cleaned_Full Data_R' name='federated.01edtqd1ilbydg18tltyw1h3jxl2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01edtqd1ilbydg18tltyw1h3jxl2'>
+            <column caption='Is Arrested_Updated' datatype='string' name='[Calculation_377176518213365760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IFNULL(STR([Is Arrested]), &apos;Unknown&apos;)' />
+            </column>
+            <column caption='Arres Rate' datatype='real' name='[Calculation_377176518213836801]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IIF(([Calculation_377176518213365760] = &apos;VRAI&apos;), 1, 0)) / TOTAL(COUNT([__tableau_internal_object_id__].[weather.csv_B8676676FF81499899737C7C7B39AD1A]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Is Arrested]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Rating]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_B8676676FF81499899737C7C7B39AD1A]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_377176518213365760]' derivation='None' name='[none:Calculation_377176518213365760:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rating]' derivation='None' name='[none:Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_377176518213836801]' derivation='User' name='[usr:Calculation_377176518213836801:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Calculation_377176518213365760:nk]'>
+            <groupfilter function='member' level='[none:Calculation_377176518213365760:nk]' member='&quot;VRAI&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Calculation_377176518213365760:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01edtqd1ilbydg18tltyw1h3jxl2].[usr:Calculation_377176518213836801:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Rating:nk]</rows>
+        <cols>[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Calculation_377176518213365760:nk]</cols>
+      </table>
+      <simple-id uuid='{3D5ADFED-0C7C-48D7-B08B-F7BF76929185}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='1_Create_a_Box_Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xxct5h0oq26k311e98ls1k8whms].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{708295F4-94C3-4087-B28D-8CDBBD4BA82B}' />
+    </window>
+    <window class='worksheet' name='2_Temperature_Difference_Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Calculation_1011339640672796676:nk]</field>
+            <field>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Tdiff (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A3B1BEC2-DE1B-4446-83E9-0F5B3DB7DC36}' />
+    </window>
+    <window class='worksheet' name='3_Bad_Conditions_Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Bad Conditions (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3486EA28-D746-4847-9D5A-091B6E5F4403}' />
+    </window>
+    <window class='worksheet' name='4_Rating_Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xxct5h0oq26k311e98ls1k8whms].[none:Calculation_1011339640674009094:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{895210C6-371A-469D-85FA-B4A43C4B5F50}' />
+    </window>
+    <window class='worksheet' maximized='true' name='5_Arrest_Rate_in_Different_Weather_Conditions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Calculation_377176518213365760:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Calculation_377176518213365760:nk]</field>
+            <field>[federated.01edtqd1ilbydg18tltyw1h3jxl2].[none:Rating:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0E51AA1C-036C-4CF8-A750-A310C993140D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='1_Create_a_Box_Plot' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='2_Temperature_Difference_Histogram' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='3_Bad_Conditions_Histogram' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAVTUlEQVR4nO3deWyU953H8ffcp+/bAWMwtsHGNibcl4EEQqCELUk3myaKsqKtGqXdStko
+      aqP+sa0iVV1p+8d2q6jasG3adBsIKUdIQkIOAgmnCbbxgTE+AN8HHl8z9lzP/kFwSw2JZ/Ez
+      M+b5viQkPH78PN95Zj7ze87v6BRFURBCo/SRLkCISJIACE2TAAhNkwAITZMACE2TAAhNkwAI
+      TZMACE2TAAhNkwAITZMACE2TAAhNkwAITZMACE2LigAoioJclS0iISoCAODz+SJdgtCgqAmA
+      EJEgARCaJgEQmiYBEJomARCaJgEQmmZUa8ZK0M/17i6GvQop6ZnoAqOYTFb0ugCDI6PExTjR
+      6XRqLV6ISVEtAN1NVVQ0uYhPiMUSl8ZAZwMpKbkEBxqoH4pnZZHzrubf2NjIr371KywWC088
+      8QRLliyhsrKSP/zhD/h8PqxWKy+++CJ79+6loaGBJUuW8Nhjj3Hw4EFOnjzJ2rVr2bJlCwaD
+      YYqesZiOdGo1xjr32RFmlq4n1XEjY/X1lcSZY7jU6mLp6kVY/+bDX1EUfD4fZrN50vM/dOgQ
+      ubm55OfnT/hdf38/hw4d4rHHHqOrq4vMzEx+//vfU1payqlTp9i5cye7d+9mw4YNzJo1666f
+      q5i+VBsBPL3tHPtgPwG/nvxFa7EOdfFBZRV5KzeMv/l9Pt/4JRCBQIDR0dFJzVtRFK5du0Z9
+      fT21tbWUlZVht9vHf3/+/Hmys7PR6XS4XC727duH3W4nJyeHY8eOsWvXLoxGI7GxsZNeprg3
+      qRaA+IwssvNXkqT0caq6hbSUNLZsLaa5oYG2gWQy4yyYTCaA8RBMdgRQFIUdO3bQ0dFBXV0d
+      n3/+Odu2bQNgeHiY1tZWduzYgdVqZcaMGaxatYrq6mp6enqIjY2lqKiImpoaPB4PCQkJ6qwA
+      MS2odhRo5qyZ1Bx7h3c+KSczJx+LyYzRGk9RcQ4NtfV3dfGb3++npqYGp9OJ0+kkEAiM/666
+      uprc3FycTie9vb1cvnyZ5ORkfD4fzc3NeDwekpOTGRsbY2hoaCqeqpjGVNsHCEWo+wCKotDW
+      1sa+fftITU1l69atOJ03dqpra2uZOXMmMTExeDweDhw4QEdHByUlJaxbt47jx49TUVFBaWkp
+      q1evRq+XI8FaNi0DIMRUkY8/oWmq7QRPhfa+IZRgZAYos8lASrwjIssW4RPVAfjX33yAezQy
+      N8oUZKfwi+89EJFli/CRTSChaRIAoWkSAKFpEgChaRIAoWkSAKFpEgChaRIAoWkSAKFpEgCh
+      aRIAoWkSAKFpEgChaRIAoWkSAKFpqt0P4Bsdod81SAA9MfFJmHR+jEYzel2QEY8Xh90mneFE
+      xKkWgLbLldRcGcIZ62T2/Bg8fQ2kpOShG7nMhV4HaxbOVmvRQkyaeo2xFAP3Ly8jPckKQH0f
+      eIc6uXTFy9I1RciHv4gGqgXA7B3ikw8OYLY5WbhqPcpQFx98XkXeihA6w0WwYUUwGJSucRqg
+      WgDS85byrYVOhrsuUtHYSlpCGg9vXkBTQyOdM1NJc5q+vjNcBIcJvV6P1WqN2PJFeKgWgM6G
+      c1Q29hAwWCld/SDKQBMmeyLFxQFOVNaSurJYdoJFxKkWgJxF68lZ9DcPpC748j8zeWDVTLUW
+      K0RI5DyA0DQJgNA0CYDQNAmA0DQJgNA0CYDQNAmA0DQJgNA0CYDQNAmA0DQJgNA0CYDQNAmA
+      0DQJgNA0CYDQtBAD4OfS8ZN0+ALqVCNEmIUYAD2xCW4+/fAs1wdHcHvGCKpTlxBhEeIdYUH6
+      ewdp/uI0r144TkzifL79nW8Qp05tQqguxAAYmbdqE99Mmk9adiYeT4BYdeoSIixC3AQK0Hjs
+      ALt+9xY1bc18+JdPGPiKqYMBP8NDwwS40QIlGFRQggFGx8bGO0EIEUkhB6Dt8gjzimehDwYY
+      HXHzVbvDfVcreePVffQCTU21uFyjDHZc5NSFq3dTsxBTJsQAmFjxzVUMtrdw+I23SV6+lMQ7
+      TBlwd9PQ7qcwb8b4Y77hbi40ulm6aG5Ee/4IcVPIbVECBicl95cy4oVYvIwCtglTBWm6fIUZ
+      eXm4zlXceGioi/e/7Axn199480tnOBFpIQbAz/mDh2ifuYDsBD1mq4nbfo57+6g4W4HXcRnX
+      1XYy49PIj0tj80MFXG5opmdWGsl2o3SGExE36QAE/F48bg8xiTZSsgopTjeh15sw325icwrf
+      2vldwEvV+ydIW16Aq74Kkz2JhcV+Piu/wINrFkpnOBFxkw7AQGctb+35mCGAxteoAZwJ83j8
+      n7d8xXkAM8UPrQMgLb/4y8ey2bQ2+/9brxBTatIBSJyxkO8+X0jle8dJ2bSOTN0wJw5fQA5m
+      iukshH2AUao//ZC9+98nsaeNFMVNa288C7aoV5wQagshAEaSs2aTmz2HlMJCMowm1s+YLWeC
+      xbQWwnkAI+mzC/n2D/4J5Uojl+rr+OJMDSPq1SaE6kI8Eebj7F/eorKhE0tCLANut3r91YUI
+      g5Dfv8GgjdlzbYz6Aww2tjEMWFQoTIhwCPlq0JIt68gKWKj4/BgxqxbJpdBiWgtxE0iHPcbB
+      qSMnmb9yFYkxZgzq1CVEWIS8D1D+l3009fTTO+bmysfl9KhTlxBhEfIIYLE5UPzDNFVW0mYw
+      3uZCOCGmjxD3AQzM27Cedv0p+twK67eWEaNOXUKERchdIRrPn6X2Sg+JWXnkZCSoU5UQYRJi
+      AIzMX/cPfOepzbjK3+KFF38t+wBiWgv9foD9/82fqjxsffhx/u3JGXe8I0yI6SDEEcDAnBWb
+      eXzTMrrrjvLGn48wqE5dQoRFiCOAwkBHI58dO48hPo7ZOVm3vyFGiGkixADoiJu5kO8/vwG7
+      WU6Biekv5NaIcXFmas5+QVd/H43XuuSGGDGthdwX6OKH+9n/zlEu97Rz8u3j9KtTlxBhEeIm
+      UIC+Dh8zZyfjHRpiaMx7xyk7LpVzuqoZvTODsg0rcfe1ERubhlnnpv7qdQrzZ8tN8SLiQhwB
+      zCz/5jp0I32cOHyc7LUr73gY1JYwk4e272BNkZ2KyjYGBq8zNurh8oUqLEkZ0hhLRIVJjwCD
+      PY189ul53EBCxgxiFQj0dDFCNo7bTO90WKitOkOfy8Pc+4sYudLCuZMncM6az7JkGzrA7/eP
+      Tx8MBvH5fLfOJII7GMrt6hH3nEkHwGKPJ2deLl8c+gDnpoeYHezh47PtrLvD9HqjmcSUNAz6
+      Lgb6hzAazCTExzDiHiaggF53o/nUzaZYOp0OvT6KvrAm2uoRqph8ABxJ5C+IxVXxGX2WZDKT
+      TFg+accDOCdMPUZbazf2xER0vgEaunpJS7AyZ34Bgx211DT3UjInafwNpigKOp0Og+HvDq1G
+      cCvptvWIe06IO8EmFj+yjT//71vsGg5QUPYNUu4wnd7fzxenL2JwprJ0aS5jg93Y7Dbi84vx
+      Xu0Cku6+eiHuUsj3BBtis3jye88RVECvv9NHtJ778kq5L++vjziT0sYXmZeTHXKhQqhh8r1B
+      faMMDblv+U4wvcFMTJxTbosU09akA+DqqObPr39wy8VvzsRCnv7+duJVKEyIcJh0AJKyFvOD
+      lxarWYsQYRfyt0ReO32A//jdJ9iTY7EmFvGj5x+X1ihi2goxAD4ulXdTsup+5iwspr28LZJH
+      KoW4ayEfBp1VkIyfWE6/+y4+U64EQExrId8QY0svYnn+XFaWFHLl6ggmdeoSIixCCICP1voL
+      7P/dAdIe2cQMZZDPj3byzMJc5Ju0xHQVQgCCDF/vY2DMjaGjHb3BxJrHNspN8WJaCyEAFuat
+      eIDnZsyloaONoVEj96UlhHo9tRBRJcT3r0LvxU85Ud+P93ojb7z5ER516hIiLEK+JbK1cYgV
+      Wzbz0Ob1JA4PMqxOXUKERciHQZc9sobf/M9/8rkuQNbSbXJNp5jWJh2Avmv1tHtiKcpbyI/+
+      JY8xvw673Sr7AGJam3QAhnquUnvVQUbiX4/8e71+4hJi5GpQMW2F9j3BJ07Q23Z+/BFHfB47
+      ntwoX5Uqpq1JB8BkTWb9jidZvyxHzXqECKtJByBt7iISFb308hH3lEkHwGi2yHcCi3uOagdx
+      Rl1tfPzOfg68dxyXV6Grqw2324d/dJi6S83j7VCEiCTVPtS7OvtYULYZ83Az1ZUtJMcOYjLG
+      cK2pAn3WYukMJ6KCagHIyi/CPzZMS+8QaffNJNDbzoVzZzGlZbM81Y4OCAQC4yNBMBi8pVMc
+      ENnOcIoysR5xz1FtE8jnuU5tdQPm1HzmZjrR6XQYjTr8Xu8tnSV0Ot34PyHCTbURoPliHfGz
+      SsiIsxAIBFHMDuaXLKD/WjV1V/pZMCt+vPPazc5wRuPflRPhznAT6hH3HNVeYf/oAOeOHwEM
+      ZBUuJSsxFavNxuyChVxsbkchXm6nFBGnWgAKV26l8La/MVGQP1etxQoRErmWTWiaBEBomgRA
+      aJoEQGiaBEBomgRAaJoEQGiaBEBomgRAaJoEQGiaBEBomgRAaJoEQGiaBEBomgRAaJoEQGia
+      BEBomgRAaJoEQGiaagHwjw1Re/4cLT1DAPT0dOLx+AiMjdDQdFU6w4mooFoAuq+24DVZGB28
+      8SVK16934XF7aKo5j8+SoNZihQiJal0hMnOLsHVdpXvkywe8bi5VVxCMzWBZZgw63Y3OcDfd
+      thObdIYTKgtf5yclgNvtwRRz67v65qaQoihRt1mkRj3Dw8O4XC7i4+NxOBz09/fjdrtJTEzE
+      ZrPR39+Px+MZ/1moK3wBsMSwcGkxvS1VXGxNp2Bm7C2d4YLBICaT6da/iXBnuAn13KXe3l5+
+      +9vfYjKZWLZsGampqezfvx8Au93O5s2b2bNnDwaDAbvdzg9/+MPxdSTUoVoA6k8fpqLZhYKe
+      zoHF5GUkY7XZyCkqpaahFUWJ0Vw/0KqqKsrKyli1ahVwoyHwiy++yNjYGHv27KGjo4Nly5ax
+      YsUK3njjjagbEe9FqgUgf9lm8pfd7jcmigvz1VpsVHO5XJw4cYK9e/eyfPlyHn30UTo6Ojh+
+      /DgbNmzAZrPxxz/+kffee4/Vq1ej18tRarXJGg6j5ORktm/fzi9/+Uva29tpaWnh3LlzbN68
+      maysLKqqqliyZAkvv/wyzc3NjI6ORrrke560Pw6jgoICdu3axd69eyktLaWuro59+/Zx9OhR
+      0tPT2b59O6+//jp79+5l1qxZmM3mSJd8z9MpUbChqSgKPp9vwgv+xM/fwj3qi0hNBdkp/OJ7
+      D0Rk2SJ8ZAQQEwSDQS5cuEBLSwuZmZksXrwYj8fD6dOn8fl8lJWV4XK5KC8vJzExkaVLl0bk
+      aFUwGOTs2bN0dnYyZ84cFixYQEtLC9XV1WRnZ7NgwQJ6e3s5c+YMOTk55OfnTzjwIvsAYgKf
+      z0dbWxsOh4MjR47Q2trKwYMHuXbtGkajEZ/Px5tvvkkwGKSyspLz589//UxVMDY2RkdHBw6H
+      g3fffZfW1lZ2796NyWTio48+oqmpid27d+P1enn77bfp6uqaMA8ZAabA2bo2Tta0Rmz5/7i+
+      kPQk55TNz2KxsHHjRrq7u6murkan09HT08Pjjz+Ow+HAYrFgMBgoLCzEYrFE7HC2zWZjy5Yt
+      tLa2cvHiRcxmMxaLheLiYoaGhvB6vdhsNrZt20Z5eTktLS2kp6ffMg8JwBRo7nTx0RfNEVv+
+      Q0tzpjQAAI2NjezZs4eMjAzMZjMtLS288sorDA8P8+STT5KVlcVrr72G1WrlqaeemtJlh6Ky
+      spLDhw8zZ84cYmJiSE5O5pVXXiE5OZlly5Zhs9nQ6/VYrVb6+/sn/L1sAokJPB4PCQkJvPTS
+      S2RkZFBXV8f8+fN59tlnefrpp6mqquLSpUu88MILbNy4kZMnT0bkpN3IyAjZ2dn8+Mc/xmg0
+      cvz4cQYHB/npT3/K7NmzaWxspKOjg4GBAWpra0lNTZ0wDxkBxAR+v589e/bQ2NhIWloazz33
+      HPHx8fz617/GZDLx7LPPcubMGX72s58RFxfHzp07I1Kn1+vl1Vdfpbu7m5ycHB5++GE6Ozv5
+      yU9+QlZWFs888ww6nY6XX36ZkpIScnNzJ8xDDoPeQSiHQfd8UsOfjlxQuaI7+/fvP0h+VnLE
+      lj+dySaQ0DQJgNA02QfQEH8gyPP/9X7Ell8yN52dW0u/drpel5ufv/ZpGCqSAGiKoihc6RqI
+      2PIzk2MmNZ0vEAxbnerdFD/cw9HDBzlyso4A0N3djtvtwz82zMWGZrnWXUQF1QJQU3mOGSVl
+      5NnaKG8Y5Hp/D6MeD41V5yFm4vFYISJBpQAoBBU7aamxpM0tAFcnytgwNV+U02fOJDfNobm7
+      wUR0Ct9RIJ0OnV7B7/NFstmDELdQKQA6DHoPHZ39dDTUoEtIR2d2ULBwCZnG69Rddck+gIgK
+      qo0ABSX301lzgpbALO6fG0tiQipWm405BQvRe3plFBBRQbXDoEZHMms3fWP859TUjC//Z6Jw
+      3ly1FitESCJ6HiAYDAJ/bYp18+ebZqXG4vFGpjtbeoJjQj13Emc3k50ep3JFd2Y26idVq6Io
+      Ea0zJd4+qToNesJWZ0Qvhvvb1oN+vx+jceryeDNQU3mrnlrzVBRlylugTPX6hButLKf61kc1
+      6rwZssms04iOADef+M031lSviKl2c8VGe52AKutTjecd6dddLoYTmhY19wOosRkw1W6uqulw
+      Ei8YDEb9+oTI1xkVAZhqihLE63Ez6gen04FBH51vWEUJ4hsbI6AzYrNMbSPeqaXgHxvFPepF
+      b7bisFki2bf4KwV8Y7g9oyg6A3aHA+PXvPbRvzH7/zDqaufTY2fwBfwkFa5nRX5KVL5g/Z2X
+      uVDRhC8lmwcXz4t0OXfmc3Hq2BmGfAE8bh1l2x8mKUrz2t5YQU1TH36/j+TcJSyfn/mV09+T
+      I0B7/Un67UUU3GfkzLFyFqxZjSMKu4wHgwF8A9ep7nRx//yJ96tGjWAQv6Jg0AW5fOYUtoVr
+      mGGNdFG3d+NARZDu5os0j1hZUfzV55zuyRGAYACLw45Or8ds9uLzA1EYAL3egD5KN89uodej
+      eIa43HiJsZQ85kTpmx9A73fx8fvHGLEmUVq66OunD0NN4WcwMTIwSNA3iHvMivnejHn4KD6a
+      6uowpeVRmJMWjZ8l43w4KNv6CGuLMmlobPra6e/Jt0ZiWhZVHx2m5qRC/vKHsEXpK9bZcJZj
+      p2roGh6jtWuQLWsWYTJE4Ygw2MKnZ2uIa2jmjN7I8k2PkhW5E8pfqfH8US5ccRHEQNaC5V87
+      /f8B8YzMQf91lmkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='4_Rating_Distribution' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAQdElEQVR4nO3dWXAb933A8S8WWFykAPC+RFGUdVCXZUqWZctWfCmOZdmWoxxOk2mmnWSm
+      zkv70My0M81MnWb6lD6kfXPaJp0mnXGbtE3sxE58StFlSZZEixQp3hRP8ABAgCSABfbog+zY
+      ie0kFWmujP/v8wYMgP8fJL7YxWIX63Ecx0EIRWluT0AIN0kAQmkSgFCaBCCUJgEIpUkAQmkS
+      gFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmklEYDjOLi5V7eM7+74tm3f8H1LJgDLslwb
+      v1AouP4CME3TtfELhYJrYy93/JIIQIgbJQEIpUkAQmkSgFCaBCCU5nN7AivlX352kdNXJlZl
+      rIf3beSLB3euyljio1UyAWSNIuklY1XGyhnubXIUK0tWgYTSJAChNAlAKE0CEEqTAITSJACh
+      NAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSSmZvUFc5NrlcnmAoBHaRXC6Po+mEQ0E0bPK5
+      HKbjIRQO49M8bs9WvIcEsGwOic6X+Ot/fZ2/+ttvYXa+wE9PXSFXMLnn819ja/5Nnn3tMksL
+      OdoOfYU/vneT2xMW77GqASylZ3ECVfiyk0xbMZojkMh5qAgU6O7uR4s0sHlDI9nkPKaZZt6K
+      UqHNMzyRonLtRlrrwowN9DGb9XDLljZiIe9qTv8DWUaSlzvSPPKJNsDH9vuOsvPBzzB08n84
+      t2Swds9D/OXeI1hz5/nv8zm3pyt+y6oGsJCcZh4TKzFOsjBNoGkNMwUfo5PD+BpaMOID9Ph9
+      MNTFrH8N29vK6TnTg11TTyU2yZEeuoam8Dk2CcPDQ/u2reb0388ucvX0MVrufpj81Z8CHmxz
+      ju9+6+/J1O7n6JN16IEAM6M9nD4/xX0HP+XufMX7rGoAldEYA4Nxgv41VHiXmE4kqaxrpZsy
+      Dm68hVwoR0cmR0wvZ/e+fVT6HGhbR9/YDH1DE7T6ZvF4Q8SiIUJVFas59Q+Unx/n3579L3L6
+      64yPXKUt3szffPUBnvrmPzLb/So/eaOf2naHE2/lefjTRyj3yfr/zWZVA/DHKrBmz8PG/TR4
+      DI71Z/jUrio2x6/yvz/9CTgBdh+4k2wmhd/nAQzm4rOk0gv4qmtpXNdM5686MLIhasL1qzn1
+      DxSsbOXbz/wnhmFw7Of/ztq9ezj//A84fmkICw87D32Jsz9+hl9Ohrl49udsuPMoX378dvxu
+      T1z8msdZ1d/0c7BMEzQfGjamDT6fF2yLYtEEzYvu8+LYNh6vF8/btzctG69Px6t5sMwilu3g
+      9en4vNe34tq2zXd+dIbjb42tyrN4/O4tfOVw+68vG4aBpnnwenUcq0C+UATNRzAQwC7mMYrX
+      f7bRqwcIBnRWejlgWRa2baPr+go/8h/GMAz8fj8ejztLuHw+TzAYvKH7rvJWIA9e3zv/JC/6
+      O99CaF78gXc/0Hq83t+4vfc9s/Tp/pty05XX60PTPKAFKNMD714fCPGei+ImI1+ECaVJAEJp
+      EoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKXdjDtW3pCyoJ+KNTe2
+      S+z/VzhQMn825a3y8QAfDdu2sW0bn8+dF6ZhGOi6jqa5s0CV4wFu/HgAWQUSSpMAhNIkAKE0
+      CUAoTQIQSpMAhNIkAKE0CUAoTQIQSpMAhNIkAKG0ktmr66Xzg/SOJV0Z27JtNE1b8d/8/EM5
+      joPjcP2nGV3wUT3/9s0N3Hfb+hV+1N9UMgFcHZ1btR/HFatjTTjwkQcgq0BCaRKAUJoEIJQm
+      AQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUNpNtTv03OQoZjBGfWXk
+      d94ut5hgcrbILa31qzQz4S6b5PhVXnvuxwQO/AWP7Yxev9pI8uz3vsvZgXl2P/g5vvDIHl58
+      5hv8omuBypqtfO3rX6b3uR/w0pt91O+4nz/90qNEf+vnU2+qAIr5LEtFH4t+L8FQGA2TfN7A
+      xksoHERzbPL5PAsLaRazXrenK1aNQyHvcNe+WzlpvnvYTbb/FRKtn+ebfxTi5R/+khl2Y4Wb
+      +dY//BlVAbDtFKktD/F3n/0TOn72ffoSsPe33jNvqgBwTMb63mLQDlDd0sqGcIZ/fub7jBkx
+      vvjUn7PeN8Hg8DSJhSzVLbvcnq1YNV7qN26HwVFYePfa8KYDlL/8Q759Kk3LnseoZ5Gu11/m
+      /FCCOw5+hiN3b2FHe4yBS8eY1LbxYM37H/nmCsDjY/2OfTSVFTnRMcJ4WYFPP/UNQoVB+qbn
+      mfXOccvuA+wwJhiadnuywm3poctoWz/FU9tCnHjhOJPGHXz9n76HUchy9rn/4MTa9VSN/IyJ
+      8ts4dLiVwAesNNxUAQSDHi6eeZWLWhntd99LND/CqXPHCdRWUVcRZF1FAydefQ4nXEHrph1u
+      T1esGpOp3m56L3TSnXW4WN7O7o0NYDvMTQ/ShY9UuoC9NMzPX7lKVbWPqUUf7d4hnn9plD0H
+      qzh3Lsm2W9upKvvNl/xNFUBF4xYOH93ynmu283jz9vdcbuSxo22rPS3hOofC0gLJ4EZ2BfOk
+      swYA0e2f5HDuBF2jGQ584fO0VFbibI1zeTjJrkNfYGe1h/ieFhZSSXIhk6L1/nPBlMwZYr7z
+      ozNyUHyJeWz/Zr766O7fezs5Q4wQN0gCEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0C
+      EEqTAITSJAChNAlAKE0CEEormd2hZ1KL5Iu2K+MXi0V8Ph8ejzsnqbMtG9ux8fncObyjWCig
+      6zqs8POPhANURkK/93bL2R36pjogZjmqo2HXXgCGYaDrOprmzgLVsixs277+InSBYRj4/X7X
+      3gCWQ1aBhNIkAKE0CUAoTQIQSpMAhNIkAKE0CUAoTQIQSpMAhNIkAKG0ktkV4rvPX+BU14RL
+      ozuA27sBuDkHl5+/49zwfkglE0C+YLKYK7g9DfExI6tAQmkSgFCaBCCUJgEIpUkAQmkSgFCa
+      BCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkfywCM7DxjE3NuT0OUgI9lAGYxx3x6ye1piBLg
+      6vEAmfgAJ09fIlM0qWrZy+0tNqfPdLBo+djcfg+N3klOv9lLUQuy6677qS5c4+SbPSwULJq3
+      7Xdz6qJEuBpAam6atgOP0xyNc/JEnsnJKdruPsy6SJGT57sosMSdDx0lZic419NH0Z/jzoc+
+      TZk9y/Bk0c2pixLh7hFhHg/zczOEjQQFygjoOqm5GcoMA8tTRlDPMzc7Q9GexeOP4Fhpksk5
+      DHOOrBl1deqiNLj6GaC2aT3GTB9dfaM4us76tl0Es+NcGcmw5/Zb2b5rD0a8n+GEhz27NtG2
+      bSfz13oYTdo0NcTcnLooEa4uAYzsAom5JEagivsPrsfr19ix9wA7fn2LCm6/575376DXcte9
+      D6z+REXJcjWAWOMWHv3MFjenIBT3sdwMKsRKkQCE0iQAoTQJQChNAhBKkwCE0iQAoTQJQChN
+      AhBKkwCE0iQAoTQJQChNAhBKK5lTJK0JBaiOhl0Z23Gct09R5d45uq6fJsud8a8/f/fOEbac
+      8T2O4zgrPJ9VZ9s2tm3j87nTs2EY6LqOprmzQLUsC9u20XXdlfENw8Dv97sWQT6fJxgM3tB9
+      ZRVIKE0CEEqTAITSJAChNAlAKE0CWAEej8fVzYDvzEHFsYFlbX2TAFaA2y8AceMkALFsH+c3
+      gJL4IkyIGyVLAKE0CUAozfv0008/7fYkVoLjOKTHu3nxlRMkzTBNtTG0lV41tfJ0nHyZ429c
+      ZCg+T31jE+nhS7zw2hkKwWrqYiESI5d58ZVfseSrpL6qHG0l1o8dm1x6mjeOn8db30DE7yWf
+      GuOXL7zEaAYa6quxF6Z49RcvMpiwaGyowc7OcPylX9AzlaOxsQ6/dxnvdY7J9LVeLl4cprK1
+      iQBw5dTzvHq6g/6BBE1tLaQGLvLKsTfIeCI0VEdIjFzm5VdPkrTLaaqJspw/QzGX4sLJ1zn1
+      ZjfeigYqghZdZ45x/EI/FWvXUeYt0HPuOMfOXmFNQysRv0n/xRO8dvoywdoWKkL6h45fMksA
+      x8xzqWecBx55hPJMH8OJwoqPYRfzpPRannzySR4/eA9BY47L43mOPPEISyMdTE3H6RhZ5JEn
+      jpAfv8xcZoXOYeBYzM5mqK+upOAUwcxx4UI/ew89QSOzjMTjXLnQTdsDT7DRn6R/aoahS500
+      7T/MbdEFusbnlzd+cYl0sZwqv8n1v6pJrhjh0c89ydEn7iVipejqy3L/w5/EGe0kns/SeWWa
+      Txx6mPDMFUYW7GUNX1hIU73tAJ89ci9z3d2MjfezULaJIw+00Xmuk/jEIElfC08c2svV8+eY
+      HhsiTj1HDt/DwIWz5KwP/5hbMgHYTpaySDPlwRD1rU0UEukVH8Ms2ixN93Py1BsMTc2TLxrU
+      1q0loIeob6xmYXaRqsZaQnqAlto6soXcygys6azbtJlowAuAU8xhV9RTE9ZZ31zPQibNUlk9
+      6yJ+WlvrSWUypDw1bKoM0biphXxycXnj+6Ns3tRMwPvO22iG+PgsF8++Qd94ApZm8TdtIRIu
+      Z0trOfG5afToJmKhMpo31bMwu7zxwzUttNYEGR3sJ7JuA35jiZrmdQSiLdSFF0hlDRoam9DD
+      ddTELGZyRdbVNqAHK6iq8GMVrA997JIJADRsu4gD2JaFx+dd8RF84Qh33nWAluY6xnreZDpt
+      YlkmAJZt4fVqmNb1dzsTG+9HtnnQg2Ve/6dapoPXp+GYJjZgmTY+nxePZWICjmniWfHdxCPc
+      9eB+NqytZabrHGOGhlO8vrQzTRufT8cxC9hvj68t839hF3P0dlzCim1k+8ZaPHiwLQuwsW0N
+      TXvnMji2g9fjwbTfvozD71r/KpkANC2MmZ1ibGKMkYE45dWRFR+jYCSZmc0TDAXRcAgGw8xP
+      jzIZH2NiaoFYQ4ylqSnG4pMMxxOUBVfoAB3HZimTYj6TIZNKsWT7ieZnuToWp3t4glikmhoS
+      dA5Ncrl3kqpoBfVlGTr6x7nSOUy0umx541sFUskE6cVFUokExvwcYxmDQCCAF3DCDTiz3YyM
+      jtA1UqSpqhaPMci1sWv09qWorAkta/j58R7mPJXE/DYLi1n08gqmBq4wOfgWCaeGmjXljF/r
+      Y2q0m0Q+SkM0zOj4EPGJAZILPnT/h7/MS+ZDsEfzUlsRoqdnkOqN7WyoLVvx47O8mk4uNUrP
+      wCRNbbtZ31RNTdjmcvcIt+zaR0NVhNqIh66uflp23kljZXBl5mAVGO69zFg6SzaRwArXsn1L
+      A0OdnQSbtrK5uY7quiomezvRajeztaWOaE01ycErGLFbuLW1Du9ytgjkU1zo6GTRdkjPzBJp
+      3oY/PUzv8BRVW9rZWBOjMuKhf2CCtTvaaYqWURUL0N97jZqtt9Fatbw3gvxCirHxceLxOJm8
+      xroNG/Bn4/TPwr47dlARiaHnZ+gdz3P7/t1URGMEiwl6htO033UHkd8RgHwRJpRWMqtAQtwI
+      CUAoTQIQSpMAhNIkAKE0CUAoTQIQSpMAhNIkAKE0CUAoTQIQSpMAhNIkAKE0CUAoTQIQSpMA
+      hNL+D4OVCl5Vw/CvAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='104' name='5_Arrest_Rate_in_Different_Weather_Conditions' width='144'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
